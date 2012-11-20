@@ -351,7 +351,7 @@
    .error { color: red; }
    .success { color: green; }
    p.link a { color: #999; }
-   label.small img {padding-top: 5px;}
+   label.small img {padding-top: 5px; height: 16px; width: 16px;}
    div#login, div#chat { 
      margin: 0 auto; width: 100%; text-align: center;
    }
