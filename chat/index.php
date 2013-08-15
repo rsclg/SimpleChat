@@ -368,7 +368,7 @@
 		width: auto; font-size: 0.8em;
    }
    input#msginput:focus { border: 1px solid #aaa; }
-   .chatDate {font-size: 0.8em; width:1%; vertical-align: top;}
+   .chatDate {font-size: 0.8em; width:1%; vertical-align: top; white-space: nowrap;}
    .chatUsername {font-size: 0.8em; width:1%; font-weight: bold; vertical-align: top;}
    .chatMsg {vertical-align: top;}
    form { padding: 0px; margin: 0px; }
