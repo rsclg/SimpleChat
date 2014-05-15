@@ -360,6 +360,9 @@
      width: 100%; height: 172px; background: white; border: 1px solid #eee; 
      text-align: left; padding: 0px; margin: 0px; overflow: auto;
    }
+   div#messages td.chatMsg {
+	   vertical-align: bottom;
+	 }
    input#msginput { 
      background: white; border: 1px solid #eee; width: 98%;
      margin: 0px; padding: 3px; 
