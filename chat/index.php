@@ -147,10 +147,11 @@
 	
     for ($i = $startValue; $i < count($data); $i++) {
 		$chunks = explode("\t", $data[$i]);
+    $time = explode("-", $chunks[1]);
 		$html .= '<tr>';
-		$html .= '<td class="chatDate">' . $chunks[1] . '</td>';
+		$html .= '<td class="chatDate">' . $time[0] . ' ' . $time[0] . '</td>';
 //		$html .= '<td class="chatUsername">' . $chunks[2] . '</td>';
-		$html .= '<td class="chatUsername"><a href="javascript:void(window.open(\'http://www.razyboard.com/system/writepm.php?id=ttlg&to=' . $chunks[2] .  '&statistik=1\', \'blank\', \'width=680, height=350, scrollbars=yes\'));">' . $chunks[2] . '</a></td>';
+		$html .= '<td class="chatUsername"><b>' . $chunks[2] . '</b></td>';
 		  
 		// convert links
 		$content_array = explode(" ", $chunks[3]);
@@ -343,7 +344,7 @@
    }
    //-->
    </script>
-   <link rel="stylesheet" href="http://www.rsc-lueneburg.de/css/layout.css" type="text/css" />
+   <link rel="stylesheet" href="layout.css" type="text/css" />
    <style type="text/css">
    <!--
    body, h1, h3, .error, .success, p.link { text-align: center; margin: 0px; font-family: arial; font-size: 0.9em;}
@@ -542,8 +543,8 @@
 						<option value=":-Z" title="Schlafen:    :-Z    oder    :Z">:-Z</option>
 						<option value=":-/" title="Verwirrt:    :-/    oder    :/">:-/</option>
 						<option value="$-)" title="Geldgierig:    $-)    oder    $)">$-)</option>
-						<option value="ccd" title="Daumen hoch:    ccd    oder    ccd">:-d</option>
-						<option value="ccq" title="Daumen runter:    ccq    oder    cq">:-q</option>
+						<option value="ccd" title="Daumen hoch:    ccd    oder    cd">ccd</option>
+						<option value="ccq" title="Daumen runter:    ccq    oder    cq">ccq</option>
 					</select>
 				</td>
 				<td>

@@ -1,0 +1,780 @@
+html, body, div.forum {
+    min-height: 100%;
+}
+
+body
+{
+	font-family: verdana;
+	font-size: 1.0em;
+}
+
+body, div.forum
+{
+	margin: 0px;
+	background-color:#fff;
+	background:-moz-linear-gradient(270deg,#c10000 0%,#e10000 85px,#ffffff 150px);
+	background:-webkit-linear-gradient(270deg,#c10000 0%,#e10000 85px,#ffffff 150px);
+	background:-o-linear-gradient(270deg,#c10000 0%,#e10000 85px,#ffffff 150px);
+	background:-ms-linear-gradient(270deg,#c10000 0%,#e10000 85px,#ffffff 150px);
+	background:linear-gradient(180deg,#c10000 0%,#e10000 85px,#ffffff 150px);
+	-pie-background:linear-gradient(270deg,#c10000 0%,#e10000 85px,#ffffff 150px);
+	behavior:url("http://www.rsc-lueneburg.de/css/PIE.php");
+}
+
+*::-moz-selection 
+{
+	background-color:#c10000;
+	color: #ffffff;
+}
+
+a::-moz-selection 
+{
+	color:#000000;
+}
+
+a
+{
+	color: #c10000;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+img
+{
+	border: 0px;
+}
+
+div#site
+{
+	margin: auto;
+	width: 1140px;
+}
+
+div#header
+{
+	height: 200px;
+	position: relative;
+}
+
+div#header #logo_left
+{
+	float: left;
+	margin-top: 44px;
+}
+
+div#header #logo_right
+{
+	margin-right: 60px;
+	margin-top: 30px;
+	clear: right;
+	float: right;
+}
+
+div#header #logo_right  img
+{
+	height: 110px;
+	margin-top: -5px;
+	width: auto;
+}
+
+#header a {
+	outline: none;
+}
+
+div#headerlinks{right:5px;top:0;position:absolute;padding-top:3px}div#headerlinks a{float:right;clear:right;font: 0.75em verdana;}div#headerlinks img{width:32px;height:32px}div#headerlinks img:hover{width:48px;height:48px}div#headerlinks img,div#headerlinks img:hover{-webkit-transition: all 0.2s linear 0s;     -moz-transition: all 0.2s linear 0s;               transition: all 0.2s linear 0s}
+
+div#topnav
+{
+	bottom: 5px;
+	position: absolute;
+	right: 0;
+}
+
+div.topnaventry
+{
+	float: left;
+	height: 100%;
+	font-size: 0.9em;
+	color: #555555;
+	margin-right: 5px;
+}
+
+div.topnaventry a
+{
+	color: #555555;
+	display: block;
+	text-decoration: none;
+	padding-top: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 30px;
+	white-space: nowrap;
+}
+
+div.topnaventry > a {
+    border-bottom: 2px solid #c10000;
+    color: #c10000;
+    font-weight: bold;
+    height: 42px;
+    text-align: center;
+}
+
+div.topnaventry > a:hover{height:40px;border-bottom:4px solid #c10000}
+
+div.topnaventryseparator
+{
+	float: left;
+	border-right: 1px solid #555555;
+	height: 100%;
+	display: none;
+}
+
+div.topnaventrysubmenu
+{
+	position: absolute;
+	z-index: 10;
+	background-color: #ebebeb;
+	display: none;
+	max-width: 200px;
+}
+
+div.topnaventrysubmenu hr
+{
+	margin: 0;
+	max-width: 200px;
+}
+
+div.topnaventry:hover div.topnaventrysubmenu
+{
+	display: block;
+}
+
+div.topnaventrysubmenuentry
+{
+	text-align: left;
+}
+
+div.topnaventrysubmenuentry:hover
+{
+	background-color: #888888;
+}
+
+div.topnaventrysubmenuentry a
+{
+	display: block;
+	text-decoration: none;
+	color: #555555;
+	padding: 5px 10px;
+}
+
+div.topnaventrysubmenuentry:hover a
+{
+	color: #ebebeb;
+}
+
+.hassubsubmenu > a::before {
+    content: "➤";
+    float: right;
+    padding-left: 5px;
+}
+
+div#content {
+    clear: both;
+    height: auto !important;
+    overflow: hidden !important;
+    width: 100%;
+    min-height: 500px;
+		padding-top: 40px;
+		position: relative;
+}
+
+div.headline
+{
+	font-size: 1.4em;
+	font-weight: bold;
+	padding: 5px;
+	padding-bottom: 20px;
+	float: left;
+}
+
+div.metanavigation
+{
+	float: right;
+	font-size: 0.6em;
+	padding: 3px;
+	margin-top: 5px;
+}
+
+div.contentSeparator
+{
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 0px;
+}
+
+div.headlineHome
+{
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 20px 5px 20px 5px;
+	text-align: center;
+}
+
+table.homeTable
+{
+	margin-top: 5px;
+	width: 100%;
+	border: 0;
+}
+
+table.homeTable tr
+{
+	vertical-align: top;
+}
+
+table.homeTable h4
+{
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+div.homePoweredBy
+{
+	padding-left: 5px;
+	width: 150px;
+	text-align: center;
+}
+
+div.homeHeadline
+{
+	border-bottom: 1px solid #505050;
+	color: #505050;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-top: 0;
+	padding-bottom: 3px;
+	text-align: left;
+}
+
+div.poweredByPhoto, div.poweredByPhoto a, div.poweredByPhoto a img
+{
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+div.homeText
+{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+div.topNewsDiv, div.topDatesDiv, div.topTwitterDiv
+{
+	font-size: 0.9em;
+	text-align: justify;
+	padding: 5px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+div.topNewsEntry, div.topDatesEntry, div.topTwitterEntry
+{
+	width: 100%;
+	text-align: left;
+	font-size: 0.7em;
+	padding-bottom: 5px;
+}
+
+div.topNewsEntryContent, div.topDatesEntryContent, div.topTwitterEntryContent
+{
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+div.homeInAction
+{
+	padding-right: 5px;
+	width: 150px;
+	text-align: center;
+}
+
+select#inActionDropDown
+{
+	width: 140px;
+	margin-left: 5px;
+}
+
+select#inActionDropDown option
+{
+	width: 120px;
+}
+
+div.teaser
+{
+	padding-bottom: 20px;
+	padding-left: 5px;
+	width: 99%;
+}
+
+div.teaser a[target^="_blank"],
+div.modalDialog a[target^="_blank"]
+{
+	background: transparent url('../pics/icon/external_link.png') no-repeat scroll right center;
+	padding-right: 13px;
+}
+
+div.teaserTopNews
+{
+	padding-bottom: 0px;
+	padding-left: 0px;
+	width: 33%;
+	float: left;
+}
+
+div.teaserTopDates
+{
+	padding-bottom: 0px;
+	padding-left: 0px;
+	width: 33%;
+	float: right;
+}
+
+div.teaserTopTwitter
+{
+	padding-bottom: 0px;
+	padding-left: 5px;
+	width: 33%;
+	float: left;
+}
+
+a.teasertoplink
+{
+	padding-right: 5px;
+}
+
+table.teasertitle
+{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+td.teasertitletext
+{
+	color: #505050;
+	font-size: 1.1em;
+	font-weight: bold;
+	padding: 5px;
+	width: 95%;
+	border-bottom: 1px solid #505050;
+}
+
+td.teasertitletoplink
+{
+	text-align: right;
+	border-bottom: 1px solid #505050;
+}
+
+div.teasertext
+{
+	font-size: 0.9em;
+	text-align: justify;
+	padding: 5px;
+}
+
+div.teasertext td
+{
+	text-align: left;
+}
+
+div#noscript
+{
+	font-weight: bold;
+	color: #c10000;
+	padding-top: 40px;
+	text-align: center;
+}
+
+div#footer
+{
+	height: 15px;
+	width: 100%;
+	text-align: center;
+	color: #aaaaaa;
+	font-size: 9px;
+	margin-bottom: 10px;
+}
+
+div#footer a
+{
+	text-decoration: none;
+	color: #aaaaaa;
+	font-size: 9px;
+}
+
+div#footer a:hover
+{
+	text-decoration: underline;
+}
+
+img.teamMemberPhoto,
+img.teamTrainerPhoto,
+img.sponsorsPhoto
+{
+	float: right;
+	padding-left: 50px;
+}
+
+img.teamTrainerPhoto
+{
+	width: 250px;
+	height: 250px;
+}
+
+ul.contentTable
+{
+	padding-top: 0px;
+	margin-top: 0px;
+	padding-bottom: 20px;
+}
+
+ul.contentTable li, ul.contentTable a {
+    font-size: 12px;
+}
+
+div.contentTableDiv
+{
+	padding: 0px;
+	margin: 0px;
+	float: left;
+}
+
+input[type=text], input[type=password], select, textarea
+{
+	width: 300px;
+}
+
+input[type=text]:focus, input[type=password]:focus, select:focus, textarea:focus
+{
+	background-color: #eeeeee;
+}
+
+input[type=text].disabled, input[type=password].disabled
+{
+	background-color: #bbbbbb;
+}
+
+table.resultTable
+{
+	
+}
+
+table.resultTable td.member
+{
+	padding-left: 20px;
+}
+
+table.resultTable thead td
+{
+	font-weight: 900;
+}
+
+table.test td
+{
+	border: 0;
+}
+
+table.test thead td
+{
+	font-weight: 600;
+}
+
+#overlayIFrame {
+   -moz-opacity: 0.7;          /* Mozilla 1.6 and below   */
+   opacity: 0.7;               /* newer Mozilla and CSS-3 */
+   position: absolute;
+   z-index: 500;
+   left: 0;
+   top: 0;
+   width: 100%;
+}
+
+div.modalDialog
+{
+	display: none;
+	position: absolute;
+	z-index: 502;
+	background-color: #ebebeb;
+	width: 800px;
+	height: 800px;
+	border: 1px solid #c10000;
+}
+
+div.modalDialogHead
+{
+  background-color: #c1c1c1;
+  text-align: left;
+  padding: 3px;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+div.modalDialogHead a,
+div.modalDialogHead a:link,
+div.modalDialogHead a:visited,
+div.modalDialogHead a:hover
+{
+	display: inline;
+	float: right;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+	font-weight: bold;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+}
+
+div.modalDialogBody
+{
+  padding: 10px;
+	text-align: center;
+}
+
+div.modalDialogBody img
+{
+	border: 0px;
+}
+
+
+div.forum {
+    padding: 0 1%;
+    width: 98%;
+	min-width: 1140px;
+}
+
+.forum #rsc_logo
+{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    display: inline-block;
+    left: 33px;
+    top: 35px;
+    position: absolute;
+	outline: none;
+}
+
+.forum #ttlg_logo
+{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    display: inline-block;
+	right: 60px;
+    top: 43px;
+	position: absolute;
+	outline: none;
+}
+
+.forum #ttlg_logo img
+{
+	height: 110px;
+  width: auto;
+	margin-top: -18px;
+}
+
+.forum #headerlinks a
+{
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+	padding-bottom: 4px;
+}
+
+div.forum table:nth-child(4) {
+    margin-left: 520px;
+    margin-top: 32px;
+    position: absolute;
+    width: 300px;
+}
+
+div.forum table:nth-child(4) td {
+    color: #ffffff;
+}
+
+div.forum table:nth-child(4) td:nth-child(1) {
+    width: 1% !important;
+}
+
+div.forum table:nth-child(4) td:nth-child(2) {
+    text-align: left !important;
+    width: 99% !important;
+}
+
+div.forum table:nth-child(15), div.forum br:nth-child(14), div.forum br:nth-child(16), div.forum br:nth-child(17) {
+    /*display: none;*/
+}
+
+#menu
+{
+	float: right;
+	width: auto;
+	margin-top: 133px;
+}
+
+td.forummenu
+{
+	font-size: 0.9em;
+	padding-right: 5px;
+}
+
+td.forummenu a,
+td.forummenu a:link,
+td.forummenu a:visited,
+td.forummenu a:focus,
+td.forummenu a:active,
+td.forummenu a:hover
+{
+	color: #c10000;
+	display: block;
+	text-decoration: none;
+	height: 42px;
+	padding: 0 10px;
+	border-bottom: 2px solid #c10000;
+	font-weight: bold;
+	text-align: center;
+}
+
+td.forummenu a:hover
+{
+    border-bottom: 4px solid #c10000;
+    height: 40px;
+}
+
+table#menu a img {
+	display: none !important;
+}
+
+div#newentries a
+{
+	color: #c10000;
+	text-decoration: none;
+}
+
+div.subsubmenu
+{
+	position: absolute;
+	z-index: 10;
+	background-color: #ebebeb;
+	display: none;
+	left: 100%;
+	margin-top: -40px;
+}
+
+div.topnaventrysubmenuentry:hover div.subsubmenu
+{
+	display: block;
+}
+
+div.subsubmenuentry
+{
+	text-align: left;
+}
+
+div.subsubmenuentry:hover
+{
+	background-color: #888888;
+}
+
+div.subsubmenu div.subsubmenuentry a
+{
+	display: block;
+	text-decoration: none;
+	color: #555555;
+	padding: 5px;
+	padding-left: 10px;
+}
+
+div.subsubmenu div.subsubmenuentry:hover a
+{
+	color: #ebebeb;
+}
+
+img.left
+{
+	float: left;
+	padding-right: 10px;
+}
+
+img.right
+{
+	float: right;
+	padding-left: 10px;
+}
+
+.rand table,
+.rand table textarea
+{
+	width: 100%;
+}
+
+.TAB1 table[width="400"],
+.TAB2 table[width="400"]
+{
+	width: 400px;
+}
+
+li.striked {
+	text-decoration: line-through;
+}
+
+#memberpreview {
+	width: 500px;
+	background: url('../pics/management/2click.gif') center center no-repeat;
+	text-align: center;
+	vertical-align: middle;
+	left: 400px;
+	top: 195px;
+	position: absolute;
+}
+
+.float_right {
+    float: right;
+}
+
+.float_left {
+    float: left;
+}
+
+.ce_gallery ul {
+    margin: 0;
+    padding: 0;
+}
+.ce_gallery li {
+    float: left;
+    list-style: outside none none;
+    margin: 0 4px 4px 0;
+    padding: 0;
+}
+.ce_gallery figure {
+    margin: 0;
+    padding: 0;
+}
+.ce_gallery ul ~ p {
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+table.bordered {
+    border:1px solid #afafaf;
+    border-spacing:0px;
+}
+table.bordered td {
+    padding:10px;
+    border:1px solid #afafaf;
+}
